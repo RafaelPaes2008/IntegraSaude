@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+appsettings.Local.json
+.idea/
+node_modules/

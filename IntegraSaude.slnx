@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/IntegraSaude.Api/IntegraSaude.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/IntegraSaude.Api.Tests/IntegraSaude.Api.Tests.csproj" />
+  </Folder>
+</Solution>

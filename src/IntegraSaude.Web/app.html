@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IntegraSaúde</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body class="app-body">
+  <div id="offline" class="offline" hidden>Sem conexão. As ações serão tentadas novamente quando a rede voltar.</div>
+  <aside class="sidebar">
+    <div class="side-brand">
+      <strong>IntegraSaúde</strong>
+      <span>UBS digital</span>
+    </div>
+    <nav id="nav"></nav>
+    <div class="side-user">
+      <span id="user-name"></span>
+      <button type="button" id="btn-sair">Sair</button>
+    </div>
+  </aside>
+  <main class="content" id="view"></main>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>

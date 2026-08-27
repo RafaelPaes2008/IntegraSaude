@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: integrasaude-db
+    environment:
+      POSTGRES_USER: integrasaude
+      POSTGRES_PASSWORD: integrasaude
+      POSTGRES_DB: integrasaude
+    ports:
+      - "5432:5432"
+    volumes:
+      - integrasaude-pg:/var/lib/postgresql/data
+
+volumes:
+  integrasaude-pg:

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IntegraSaúde — Login</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="login-page">
+  <section class="brand-panel" aria-label="Sobre o IntegraSaúde">
+    <div class="brand-inner">
+      <div class="logo-row">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="22" y="6" width="20" height="52" rx="6" fill="#2f9e58"/>
+          <rect x="6" y="22" width="52" height="20" rx="6" fill="#2f9e58"/>
+          <circle cx="32" cy="32" r="11" fill="#16325c"/>
+          <path d="M32 24c3.5 0 6 2.6 6 6.2 0 4.6-6 9.8-6 9.8s-6-5.2-6-9.8C26 26.6 28.5 24 32 24z" fill="#fff"/>
+        </svg>
+        <div>
+          <h1 class="brand-name"><span>Integra</span>Saúde</h1>
+          <p class="brand-tag">Sistema Integrado para Unidades Básicas de Saúde.</p>
+        </div>
+      </div>
+      <h2 class="brand-headline">Conectando pessoas, otimizando atendimentos, transformando vidas.</h2>
+      <ul class="value-list">
+        <li>
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+          </span>
+          <div>
+            <strong>Atendimento humanizado</strong>
+            <span>Tecnologia a favor de quem mais precisa.</span>
+          </div>
+        </li>
+        <li>
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 6v6c0 5 3.4 9.4 8 10.7C16.6 21.4 20 17 20 12V6l-8-4zm-1 14-4-4 1.4-1.4L11 13.2l5.6-5.6L18 9l-7 7z"/></svg>
+          </span>
+          <div>
+            <strong>Segurança e confiabilidade</strong>
+            <span>Dados protegidos e processos auditáveis.</span>
+          </div>
+        </li>
+        <li>
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 20h4V10H4v10zm6 0h4V4h-4v16zm6 0h4v-7h-4v7z"/></svg>
+          </span>
+          <div>
+            <strong>Gestão inteligente</strong>
+            <span>Informação em tempo real para melhores decisões.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="form-panel">
+    <a class="help-chip" href="/ajuda.html">
+      <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 17h-2v-2h2zm1.1-7.7-.9.9A2.6 2.6 0 0 0 12 14h-1v-1c0-.7.3-1.4.8-1.9l1.2-1.2a1.5 1.5 0 1 0-2.5-1.1H9a3.5 3.5 0 1 1 6.1 2.5z"/></svg>
+      Precisa de ajuda?
+    </a>
+
+    <div class="form-wrap">
+      <h2>Bem-vindo de volta!</h2>
+      <p class="lead">Faça login para acessar o sistema.</p>
+
+      <form id="login-form" novalidate>
+        <label for="usuario">Usuário</label>
+        <div class="field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/></svg>
+          <input id="usuario" name="usuario" autocomplete="username" placeholder="Digite seu usuário" required />
+        </div>
+
+        <label for="senha">Senha</label>
+        <div class="field">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17 8h-1V6a4 4 0 0 0-8 0v2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zm-7-2a2 2 0 0 1 4 0v2h-4zm3 10a2 2 0 1 1 2-2 2 2 0 0 1-2 2z"/></svg>
+          <input id="senha" name="senha" type="password" autocomplete="current-password" placeholder="Digite sua senha" required />
+          <button type="button" class="icon-btn" id="toggle-senha" aria-label="Mostrar senha">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 5C7 5 2.7 8.1 1 12c1.7 3.9 6 7 11 7s9.3-3.1 11-7c-1.7-3.9-6-7-11-7zm0 12a5 5 0 1 1 5-5 5 5 0 0 1-5 5zm0-8a3 3 0 1 0 3 3 3 3 0 0 0-3-3z"/></svg>
+          </button>
+        </div>
+
+        <div class="row-between">
+          <label class="check"><input type="checkbox" id="lembrar" /> Lembrar-me</label>
+          <a href="/esqueci-senha.html">Esqueceu sua senha?</a>
+        </div>
+
+        <p class="error" id="login-error" hidden></p>
+
+        <button type="submit" class="btn-primary" id="btn-entrar">
+          Entrar
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M10 17 15 12 10 7v10zM4 6h2v12H4z"/></svg>
+        </button>
+      </form>
+
+      <div class="divider"><span>ou</span></div>
+
+      <a class="btn-outline" href="/govbr.html">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#2f9e58" d="M12 2 4 6v6c0 5 3.4 9.4 8 10.7C16.6 21.4 20 17 20 12V6l-8-4z"/></svg>
+        Entrar com Gov.br
+      </a>
+
+      <div class="lgpd-box">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path fill="#2f9e58" d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>
+        Sistema seguro e em conformidade com a <strong>LGPD</strong> e as diretrizes do Ministério da Saúde.
+      </div>
+      <p class="meta">Versão 1.0.0 • 2024 © IntegraSaúde</p>
+    </div>
+  </section>
+  <script type="module" src="/js/login.js"></script>
+</body>
+</html>

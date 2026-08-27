@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gov.br (simulação) — IntegraSaúde</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="simple-page">
+  <main class="card">
+    <h1>Entrar com Gov.br</h1>
+    <p>Simulação acadêmica — não há integração real com a conta Gov.br.</p>
+    <form id="govbr-form">
+      <label for="cpf">CPF</label>
+      <input id="cpf" name="cpf" placeholder="000.000.000-00" required />
+      <p class="error" id="govbr-error" hidden></p>
+      <button type="submit" class="btn-primary">Continuar (simulação)</button>
+    </form>
+    <p class="hint">Qualquer CPF com 11 dígitos autentica o usuário demo <strong>medico</strong>.</p>
+    <a href="/">Voltar ao login</a>
+  </main>
+  <script type="module" src="js/govbr.js"></script>
+</body>
+</html>
